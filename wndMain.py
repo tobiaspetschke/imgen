@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'wndMain.ui'
 #
-# Created: Wed May 15 21:27:48 2013
+# Created: Wed May 15 21:46:36 2013
 #      by: PyQt4 UI code generator 4.9.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -23,7 +23,14 @@ class Ui_wndMain(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(wndMain.sizePolicy().hasHeightForWidth())
         wndMain.setSizePolicy(sizePolicy)
+        wndMain.setMinimumSize(QtCore.QSize(400, 300))
+        wndMain.setMaximumSize(QtCore.QSize(400, 300))
         self.centralwidget = QtGui.QWidget(wndMain)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
+        self.centralwidget.setSizePolicy(sizePolicy)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.btnOK = QtGui.QPushButton(self.centralwidget)
         self.btnOK.setGeometry(QtCore.QRect(200, 250, 87, 27))
