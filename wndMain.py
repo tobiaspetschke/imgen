@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'wndMain.ui'
 #
-# Created: Wed May 15 21:46:36 2013
+# Created: Thu Jun  6 21:52:07 2013
 #      by: PyQt4 UI code generator 4.9.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -17,14 +17,14 @@ except AttributeError:
 class Ui_wndMain(object):
     def setupUi(self, wndMain):
         wndMain.setObjectName(_fromUtf8("wndMain"))
-        wndMain.resize(400, 300)
+        wndMain.resize(552, 396)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(wndMain.sizePolicy().hasHeightForWidth())
         wndMain.setSizePolicy(sizePolicy)
         wndMain.setMinimumSize(QtCore.QSize(400, 300))
-        wndMain.setMaximumSize(QtCore.QSize(400, 300))
+        wndMain.setMaximumSize(QtCore.QSize(700, 700))
         self.centralwidget = QtGui.QWidget(wndMain)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -32,14 +32,39 @@ class Ui_wndMain(object):
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
         self.centralwidget.setSizePolicy(sizePolicy)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        self.btnOK = QtGui.QPushButton(self.centralwidget)
-        self.btnOK.setGeometry(QtCore.QRect(200, 250, 87, 27))
-        self.btnOK.setDefault(True)
-        self.btnOK.setObjectName(_fromUtf8("btnOK"))
-        self.btnCancel = QtGui.QPushButton(self.centralwidget)
-        self.btnCancel.setGeometry(QtCore.QRect(300, 250, 87, 27))
-        self.btnCancel.setDefault(True)
-        self.btnCancel.setObjectName(_fromUtf8("btnCancel"))
+        self.btnExit = QtGui.QPushButton(self.centralwidget)
+        self.btnExit.setGeometry(QtCore.QRect(440, 350, 87, 27))
+        self.btnExit.setDefault(True)
+        self.btnExit.setObjectName(_fromUtf8("btnExit"))
+        self.line = QtGui.QFrame(self.centralwidget)
+        self.line.setGeometry(QtCore.QRect(10, 120, 521, 16))
+        self.line.setFrameShape(QtGui.QFrame.HLine)
+        self.line.setFrameShadow(QtGui.QFrame.Sunken)
+        self.line.setObjectName(_fromUtf8("line"))
+        self.chkBitmap = QtGui.QCheckBox(self.centralwidget)
+        self.chkBitmap.setGeometry(QtCore.QRect(10, 10, 151, 21))
+        self.chkBitmap.setObjectName(_fromUtf8("chkBitmap"))
+        self.graphBackground = QtGui.QGraphicsView(self.centralwidget)
+        self.graphBackground.setGeometry(QtCore.QRect(10, 40, 106, 80))
+        self.graphBackground.setObjectName(_fromUtf8("graphBackground"))
+        self.btnBackground = QtGui.QToolButton(self.centralwidget)
+        self.btnBackground.setGeometry(QtCore.QRect(490, 40, 41, 25))
+        self.btnBackground.setObjectName(_fromUtf8("btnBackground"))
+        self.editBackground = QtGui.QLineEdit(self.centralwidget)
+        self.editBackground.setGeometry(QtCore.QRect(120, 40, 361, 25))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.editBackground.setFont(font)
+        self.editBackground.setObjectName(_fromUtf8("editBackground"))
+        self.chkLabel = QtGui.QCheckBox(self.centralwidget)
+        self.chkLabel.setGeometry(QtCore.QRect(10, 140, 61, 21))
+        self.chkLabel.setObjectName(_fromUtf8("chkLabel"))
+        self.editLabel = QtGui.QPlainTextEdit(self.centralwidget)
+        self.editLabel.setGeometry(QtCore.QRect(10, 170, 341, 91))
+        self.editLabel.setObjectName(_fromUtf8("editLabel"))
+        self.btnGetQuote = QtGui.QPushButton(self.centralwidget)
+        self.btnGetQuote.setGeometry(QtCore.QRect(426, 170, 111, 27))
+        self.btnGetQuote.setObjectName(_fromUtf8("btnGetQuote"))
         wndMain.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(wndMain)
@@ -47,6 +72,10 @@ class Ui_wndMain(object):
 
     def retranslateUi(self, wndMain):
         wndMain.setWindowTitle(QtGui.QApplication.translate("wndMain", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
-        self.btnOK.setText(QtGui.QApplication.translate("wndMain", "OK", None, QtGui.QApplication.UnicodeUTF8))
-        self.btnCancel.setText(QtGui.QApplication.translate("wndMain", "Cancel", None, QtGui.QApplication.UnicodeUTF8))
+        self.btnExit.setText(QtGui.QApplication.translate("wndMain", "Exit", None, QtGui.QApplication.UnicodeUTF8))
+        self.chkBitmap.setText(QtGui.QApplication.translate("wndMain", "Bitmap background", None, QtGui.QApplication.UnicodeUTF8))
+        self.btnBackground.setText(QtGui.QApplication.translate("wndMain", "...", None, QtGui.QApplication.UnicodeUTF8))
+        self.editBackground.setText(QtGui.QApplication.translate("wndMain", "some filename", None, QtGui.QApplication.UnicodeUTF8))
+        self.chkLabel.setText(QtGui.QApplication.translate("wndMain", "Label", None, QtGui.QApplication.UnicodeUTF8))
+        self.btnGetQuote.setText(QtGui.QApplication.translate("wndMain", "Generate quote", None, QtGui.QApplication.UnicodeUTF8))
 
