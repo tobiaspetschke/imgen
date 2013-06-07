@@ -50,7 +50,7 @@ class Quote(object):
         # Replace the Unicode replacement character often found in the RSS feed
         # with a space and then encode the Unicode string to a UTF8 byte string
         # as per the __str__ protocol demands.
-        return ((self.content or u'') + u'\n-- ' + (self.author or u'')).replace(u'\ufffd', u' ').encode('utf8')
+        return ((self.content.replace('"','') or u'') + u'\n-- ' + (self.author or u'')).replace(u'\ufffd', u' ').encode('utf8')
 
 class QOTDFeedHandler(ContentHandler):
     def __init__(self):

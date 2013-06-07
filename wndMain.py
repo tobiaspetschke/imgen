@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'wndMain.ui'
 #
-# Created: Thu Jun  6 21:52:07 2013
+# Created: Fri Jun  7 01:20:20 2013
 #      by: PyQt4 UI code generator 4.9.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -17,7 +17,7 @@ except AttributeError:
 class Ui_wndMain(object):
     def setupUi(self, wndMain):
         wndMain.setObjectName(_fromUtf8("wndMain"))
-        wndMain.resize(552, 396)
+        wndMain.resize(552, 459)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -33,7 +33,7 @@ class Ui_wndMain(object):
         self.centralwidget.setSizePolicy(sizePolicy)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.btnExit = QtGui.QPushButton(self.centralwidget)
-        self.btnExit.setGeometry(QtCore.QRect(440, 350, 87, 27))
+        self.btnExit.setGeometry(QtCore.QRect(450, 420, 87, 27))
         self.btnExit.setDefault(True)
         self.btnExit.setObjectName(_fromUtf8("btnExit"))
         self.line = QtGui.QFrame(self.centralwidget)
@@ -65,6 +65,18 @@ class Ui_wndMain(object):
         self.btnGetQuote = QtGui.QPushButton(self.centralwidget)
         self.btnGetQuote.setGeometry(QtCore.QRect(426, 170, 111, 27))
         self.btnGetQuote.setObjectName(_fromUtf8("btnGetQuote"))
+        self.line_2 = QtGui.QFrame(self.centralwidget)
+        self.line_2.setGeometry(QtCore.QRect(10, 270, 521, 16))
+        self.line_2.setFrameShape(QtGui.QFrame.HLine)
+        self.line_2.setFrameShadow(QtGui.QFrame.Sunken)
+        self.line_2.setObjectName(_fromUtf8("line_2"))
+        self.btnGenerateImg = QtGui.QPushButton(self.centralwidget)
+        self.btnGenerateImg.setGeometry(QtCore.QRect(426, 300, 111, 27))
+        self.btnGenerateImg.setObjectName(_fromUtf8("btnGenerateImg"))
+        self.graphImg = QtGui.QGraphicsView(self.centralwidget)
+        self.graphImg.setGeometry(QtCore.QRect(10, 290, 171, 111))
+        self.graphImg.setInteractive(False)
+        self.graphImg.setObjectName(_fromUtf8("graphImg"))
         wndMain.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(wndMain)
@@ -78,4 +90,5 @@ class Ui_wndMain(object):
         self.editBackground.setText(QtGui.QApplication.translate("wndMain", "some filename", None, QtGui.QApplication.UnicodeUTF8))
         self.chkLabel.setText(QtGui.QApplication.translate("wndMain", "Label", None, QtGui.QApplication.UnicodeUTF8))
         self.btnGetQuote.setText(QtGui.QApplication.translate("wndMain", "Generate quote", None, QtGui.QApplication.UnicodeUTF8))
+        self.btnGenerateImg.setText(QtGui.QApplication.translate("wndMain", "Generate image", None, QtGui.QApplication.UnicodeUTF8))
 
